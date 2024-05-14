@@ -33,7 +33,8 @@ const FoodCategoryCard = (props) => {
   const theme = useTheme();
   const router = useRouter();
   const isXSmall = useMediaQuery(theme.breakpoints.down("sm"));
-  const image = `${categoryImageUrl}/${categoryImage}`;
+  // const image = `${categoryImageUrl}/${categoryImage}`;
+  const image = categoryImage;
   const handleClick = () => {
     router.push({
       pathname: "/home",
